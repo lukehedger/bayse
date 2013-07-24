@@ -1,0 +1,178 @@
+/* ==========================================================================
+    :: CONTENTS ::
+    - Browser Resets
+    - Fonts
+    - Base Styles
+    - Bootstrap Resets
+    - Layout
+    - Header
+    - Footer
+    - Elements
+    - Pages
+        - Page name
+            - Page section
+    - Responsive
+    - Print
+   ========================================================================== */
+
+/* ==========================================================================
+   BROWSER RESETS - Normalize - normalize.css v1.0.2 | MIT License | git.io/normalize
+   ========================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline;zoom:1;}[hidden]{display:none;}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}html,button,input,select,textarea{font-family:sans-serif;resize:vertical;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:.67em 0;}h2{font-size:1.5em;margin:.83em 0;}h3{font-size:1.17em;margin:1em 0;}h4{font-size:1em;margin:1.33em 0;}h5{font-size:.83em;margin:1.67em 0;}h6{font-size:.67em;margin:2.33em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}blockquote{margin:1em 40px;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;_font-family:'courier new', monospace;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:none;}q:before,q:after{content:none;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}dd{margin:0 0 0 40px;}menu,ol,ul{padding:0 0 0 40px;}nav ul,nav ol{list-style:none;list-style-image:none;}img{border:0;-ms-interpolation-mode:bicubic;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}legend{border:0;white-space:normal;margin-left:-7px;padding:0;}button,input,select,textarea{font-size:100%;vertical-align:middle;margin:0;}button,input{line-height:normal;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;overflow:visible;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;height:13px;width:13px;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure,form{margin:0;}p,pre,dl,menu,ol,ul{margin:1em 0;}a.img{text-decoration:none;}a:active {border:none;outline:none;}
+
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+@font-face{
+    font-family: NettoWeb;
+    src: url('fonts/NettoWeb.eot');
+    src: local('☺'), url('fonts/NettoWeb.woff') format('woff'), url('fonts/NettoWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+@viewport{width:device-width;}
+html,body,button,input,select,textarea{color:#666 !important;}
+body{padding:0 !important;border-top:5px solid #00aeef;font:normal 1em/1.4 NettoWeb,"Helvetica Neue",Helvetica,Arial,sans-serif !important;text-shadow:#fff 0 1px 0}
+::-moz-selection{background:#b3d4fc;}
+::selection{background:#b3d4fc;}
+a{text-shadow:none;cursor:pointer;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+img{vertical-align:middle;}
+.error{color:#c00;}
+.error:before{content:'Error: ';}
+.error:after{content:'. Please try again in a few minutes.';}
+.testing{display:none;} /* Change to block if testing */
+
+/* ==========================================================================
+   BOOTSTRAP RESETS
+   ========================================================================== */
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+.container{
+
+}
+section[role="document"]{
+    padding:0 5%;
+}
+.wrapper{
+    min-height:600px;
+    padding:20px 30px;
+    border-radius: 10px;
+    background:#fff;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+header{
+
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer{
+
+}
+
+/* ==========================================================================
+   ELEMENTS
+   ========================================================================== */
+
+/* buttons etc */
+
+/* ==========================================================================
+   PAGES
+   ========================================================================== */
+
+/* ==========================================================================
+   -> Page name
+   ========================================================================== */
+
+/* ==========================================================================
+   --> Page sub section
+   ========================================================================== */
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* em widths can be calculated using the target / context rule.
+ * The target in this case is the page width in px and the context is the body font-size, which is 1em=16px
+ * The widths used - and the resultant section styles - will depend upon the page content. There's no use templating this.
+ * Below are some general device-centric breakpoints
+*/
+
+/* Desktop */
+@media only screen and (min-width: 48em) { /* 768px */
+
+}
+
+/* Tablet etc */
+@media only screen and (max-width:47.99em) { /* 767px */
+
+}
+
+/* iPhone */
+@media only screen and (max-width:20em) { /* 320px */
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx),
+only screen and (min-resolution: 192dpi) {
+    /* Style adjustments for high resolution devices */
+
+    /* Add background-size: cover; to retina bckg img elements */
+    .retina{
+        /*background-image:url('../img/liveson-logo-int@2x.png');*/
+    }
+}
+
+/* Responsive IMAGES */
+
+img{max-width: 100%;}
+img.resp-img {margin: 0 auto;width: 100%;max-width: 50em; /* 800px */}
+
+/* Responsive VIDEO */
+
+video{max-width: 100%;} /* Scale an HTML5 video element within a fluid layout */
+
+/* This padding is used to supply the necessary height of the video container. Height is then set to 0.
+ * The video has an aspect ratio of 16:9 so the height is 56.25% of the width - 9 / 16 = 0.5625 x 100
+ * Position relative is specified so the contained element can then ignore this padding */
+.media-object-wrapper{width:100%;height:0;padding-bottom: 56.25%;position:relative;}
+
+/* These styles allow the contained element - the embedded object - to fill the container div and ignore its padding */
+.media-object-wrapper iframe.media-object{width:100%;height:100%;position:absolute;}
+
+
+/* ==========================================================================
+   PRINT
+   ========================================================================== */
+@media print {
+    * {background: transparent !important;color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important;text-shadow: none !important;}
+
+    a,a:visited {text-decoration: underline;}
+    a[href]:after {content: " (" attr(href) ")";}
+    abbr[title]:after {content: " (" attr(title) ")";}
+
+    /* Don't show links for images, or javascript/internal links */
+    .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after {content: "";}
+    pre,blockquote {border: 1px solid #999;page-break-inside: avoid;}
+	
+    thead {display: table-header-group;} /* h5bp.com/t */
+    tr,img {page-break-inside: avoid;}
+    img {max-width: 100% !important;}
+    @page {margin: 0.5cm;}
+    p,h2,h3 {orphans: 3;widows: 3;}
+    h2,h3 {page-break-after: avoid;}
+}
