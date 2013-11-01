@@ -3,7 +3,7 @@
     - Browser Resets
     - Fonts
     - Base Styles
-    - Bootstrap Resets
+    - Grid
     - Layout
     - Header
     - Footer
@@ -48,8 +48,145 @@ img{vertical-align:middle;}
 .testing{display:none;} /* Change to block if testing */
 
 /* ==========================================================================
-   BOOTSTRAP RESETS
+   GRID
    ========================================================================== */
+
+.grid {
+  width: 80%;
+  margin: 0 auto;
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* clearfix */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  padding: 5px;
+  float: left;
+}
+/* with ie8 support */
+.column:last-of-type,.column.last {
+  padding-right: 5px;
+  float: right;
+}
+/* float columns right - top columns will appear on the right handside on desktop but on top for mobile */
+.column.rtl {
+  float: right;
+}
+.column.rtl:last-of-type,.column.rtl.last {
+  padding-left: 5px;
+  float: left;
+}
+/* bottom-align column */
+.column.bottom {
+  position: absolute;
+  bottom: 0;
+}
+/* center-align column */
+.column.middle {
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.column.middle.right {
+  right: 0;
+}
+
+.twelve {
+  width: 100%;
+}
+.eleven {
+  width: 91.666667%;
+}
+.ten {
+  width: 83.333333%;
+}
+.nine {
+  width: 75%;
+}
+.eight {
+  width: 66.666667%;
+}
+.seven {
+  width: 58.333333%;
+}
+.six {
+  width: 50%;
+}
+.five  {
+  width: 41.666667%;
+}
+.four {
+  width: 33.33%;
+}
+.three {
+  width: 25%;
+}
+.two {
+  width: 16.666667%;
+}
+.one {
+  width: 8.333333333%;
+}
+
+.inner {
+  padding: 5px;
+  background: #ccc;
+  text-align: center;
+  border-radius: 4px; 
+}
+
+@media only screen and (max-width: 480px) {
+  .column {
+    width: 100%;
+  }
+  .column.bottom,.column.middle {
+    position: relative;
+  }
+  /* increase gutter */
+  .inner {
+    padding: 5px 20px;
+  }
+}
+
+/* FLEXBOX */
+.flex {
+  display: flex;
+}
+.grid-fit > .grid-cell {
+  flex: 1;
+}
+.grid-full > .grid-cell {
+  flex: 0 0 100%;
+}
+.grid-cell.grid-1of2 {
+  flex: 0 0 50%;
+}
+.grid-cell.grid-1of3 {
+  flex: 0 0 33.3333%;
+}
+.grid-cell.grid-1of4 {
+  flex: 0 0 25%;
+}
+.grid-cell {
+  background: #333;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+}
 
 /* ==========================================================================
    LAYOUT
@@ -58,13 +195,8 @@ img{vertical-align:middle;}
 
 }
 section[role="document"]{
+    margin-bottom: 100px;
     padding:0 5%;
-}
-.wrapper{
-    min-height:600px;
-    padding:20px 30px;
-    border-radius: 10px;
-    background:#fff;
 }
 
 /* ==========================================================================
@@ -86,6 +218,22 @@ footer{
    ========================================================================== */
 
 /* buttons etc */
+
+/* OVERLAY */
+body.modal-open {
+    overflow: hidden;
+}
+.overlay {
+    background-color: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
 
 /* ==========================================================================
    PAGES
@@ -133,7 +281,7 @@ only screen and (min-resolution: 192dpi) {
 
     /* Add background-size: cover; to retina bckg img elements */
     .retina{
-        /*background-image:url('../img/liveson-logo-int@2x.png');*/
+        /*background-image:url('../img/logo@2x.png');*/
     }
 }
 
@@ -149,10 +297,10 @@ video{max-width: 100%;} /* Scale an HTML5 video element within a fluid layout */
 /* This padding is used to supply the necessary height of the video container. Height is then set to 0.
  * The video has an aspect ratio of 16:9 so the height is 56.25% of the width - 9 / 16 = 0.5625 x 100
  * Position relative is specified so the contained element can then ignore this padding */
-.media-object-wrapper{width:100%;height:0;padding-bottom: 56.25%;position:relative;}
+.video-wrap{width:100%;height:0;padding-bottom: 56.25%;position:relative;}
 
 /* These styles allow the contained element - the embedded object - to fill the container div and ignore its padding */
-.media-object-wrapper iframe.media-object{width:100%;height:100%;position:absolute;}
+.video-wrap iframe{width:100%;height:100%;position:absolute;}
 
 
 /* ==========================================================================

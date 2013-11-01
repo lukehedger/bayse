@@ -24,30 +24,98 @@
 	</header>
 
 	<section role="document">
-		<section role="main">
-			<article>
-				<h2>Responsive Video</h2>
-					<div class="media-object-wrapper">
-						<iframe class="media-object" src="http://player.vimeo.com/video/40493662?color=d06f1c&#38;portrait=0&#38;title=0&#38;byline=0"></iframe>
+		<article role="main">
+			<h1>Bayse</h1>
+
+			<section>
+				<h2>Grid</h2>
+				<div class="grid">
+					<div class="row">
+						<div class="column twelve">
+							<div class="inner">12</div>
+						</div>
 					</div>
-			</article>
-			<aside>
-				<figure class="media-frame">
-					<!-- Responsive-Enhance JS plugin for responsive images -->
-					<img id="resp-img-one" class="resp-img" src="http://placehold.it/320x100" data-fullsrc="http://placehold.it/500x100" alt="Placeholder image" />
-					<!-- Smaller version of image loaded in src attr and rendered by default -->
-					<!-- Larger version of image loaded in data-fullsrc attr -->
-					<script>responsiveEnhance(document.getElementById('resp-img-one'),320);</script>
-					<!-- responsiveEnhance is fed the image and mobile viewport width -->
-					<!-- The mobile viewport width given is compared to the current viewport width 
-						 If the supplied width is less than or equal to the current viewport the smaller version of the image is maintained -->
-					<!-- If the smaller version of the image is smaller than or equal to the viewport, the larger version is loaded. -->			
-				</figure>			
-			</aside>
-		</section>
-		<section role="complementary">
-			
-		</section>
+					<div class="row">
+						<div class="column six">
+							<div class="inner">6<br>Desktop: left | Mobile: top</div>
+						</div>
+						<div class="column six">
+							<div class="inner">6<br>Desktop: right | Mobile: bottom</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column three">
+							<div class="inner">3</div>
+						</div>
+						<div class="column six">
+							<div class="inner">6</div>
+						</div>
+						<div class="column three">
+							<div class="inner">3</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column two">
+							<div class="inner">2</div>
+						</div>
+						<div class="column one">
+							<div class="inner">1</div>
+						</div>
+						<div class="column four">
+							<div class="inner">4</div>
+						</div>
+						<div class="column five">
+							<div class="inner">5</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column six rtl">
+							<div class="inner">6<br>Desktop: right | Mobile: top</div>
+						</div>
+						<div class="column six rtl">
+							<div class="inner">6<br>Desktop: left | Mobile: bottom</div>
+						</div>
+					</div>
+					<div class="row" style="position:relative;min-height:100px;">
+						<div class="column six bottom">
+							<div class="inner">6<br>Align: bottom</div>
+						</div>
+						<div class="column six middle right">
+							<div class="inner">6<br>Align: middle</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+<!-- 			<section>
+				<h2>Flexbox</h2>
+				<div class="container">
+					<div class="flex grid-fit">
+						<div class="grid-cell">1</div>
+						<div class="grid-cell">1</div>
+						<div class="grid-cell">1</div>
+					</div>
+					<div class="flex grid-fit">
+						<div class="grid-cell grid-1of3">1 of 3</div>
+						<div class="grid-cell grid-1of3">1 of 3</div>
+						<div class="grid-cell grid-1of3">1 of 3</div>
+					</div>
+				</div>
+			</section> -->
+
+<!-- 			<section>
+				<h2>Responsive Video</h2>
+				<div class="video-wrap">
+					<iframe src="http://player.vimeo.com/video/40493662?color=d06f1c&#38;portrait=0&#38;title=0&#38;byline=0"></iframe>
+				</div>
+			</section> -->
+
+<!-- 			<section>
+				<h2>Responsive Image</h2>
+				<img class="resp-img" src="http://placehold.it/800x100" alt="Placeholder image" />
+			</section> -->
+
+		</article>
 	</section>
 
 	<footer role="contentinfo">
@@ -62,9 +130,8 @@
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)}(document,'script'));
 	</script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/scripts/plugins.js"></script>
+
+	<script data-main="/assets/js/main" src="/assets/js/lib/require.js"></script>
+
 </body>
 </html>
