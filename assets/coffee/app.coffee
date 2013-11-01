@@ -23,3 +23,14 @@ define [
 		_function: ->
 
 			console.log 'hello : )'
+
+		
+
+		_onModalOpen: ->
+
+			$('body').addClass('modal-open').append '<div class="overlay"></div>'
+
+		_onModalClose: =>
+
+			$('.overlay').fadeOut 200, -> $(this).remove()
+			$('body').removeClass 'modal-open'

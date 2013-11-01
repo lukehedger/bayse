@@ -14,5 +14,4 @@
 		- add other vendor files here
 
 * CoffeScript
-	- Source Coffee files: self-compile with
-	`$ coffee -o assets/js/ -cwm assets/coffee/`
+	- source Coffee - compile with: `$ coffee -o assets/js/ -cwm assets/coffee/`
