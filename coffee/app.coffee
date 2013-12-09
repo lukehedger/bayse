@@ -9,7 +9,7 @@ define [
 
 		constructor: ->
 
-			@_hammer = $('body').hammer();
+			# @_hammer = $('body').hammer();
 
 			@_addListeners()
 

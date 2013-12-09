@@ -14,4 +14,4 @@
 		- add other vendor files here
 
 * CoffeScript
-	- source Coffee - compile with: `$ coffee -o assets/js/ -cwm assets/coffee/`
+	- source Coffee - compile with: `$ coffee -o js/ -cwm coffee/`
