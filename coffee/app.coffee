@@ -1,7 +1,8 @@
 define [
 	"jquery"
 	"jquery.hammer.min"
-], ($,Hammer) ->
+	"child"
+], ($,Hammer,Child) ->
 
 	class App
 
@@ -14,6 +15,8 @@ define [
 			@_addListeners()
 
 			console.log 'Running...'
+
+			kid = new Child()
 
 		_addListeners: ->
 
