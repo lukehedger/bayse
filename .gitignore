@@ -7,6 +7,15 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Dependencies #
+######################
+node_modules/
+
+# Map files #
+######################
+js/*.map
+
 # Myth CSS #
 ######################
 # myth.css

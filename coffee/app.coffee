@@ -23,10 +23,6 @@ define [
 			$(document).on 'click','.example', @_function
 			$('.example').on 'click', @_function
 
-		_function: ->
-
-			console.log 'hello : )'
-
 		
 
 		_onModalOpen: ->
