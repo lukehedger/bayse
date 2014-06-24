@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+	sourcemaps = require('gulp-sourcemaps'),
 	coffee = require('gulp-coffee'),
 	myth = require('gulp-myth'),
 	minifycss = require('gulp-minify-css'),
@@ -9,9 +10,9 @@ var gulp = require('gulp'),
 
 gulp.task('coffee', function () {
 	gulp.src('coffee/**/*.coffee')
-		.pipe(coffee({
-			map: true
-		}).on('error', gutil.log))
+		.pipe(sourcemaps.init())
+		.pipe(coffee().on('error', gutil.log))
+		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest('js'))
 		.pipe(livereload(server));
 });

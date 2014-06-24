@@ -14,4 +14,4 @@ node_modules/
 
 # Map files #
 ######################
-js/*.map
+js/maps/
