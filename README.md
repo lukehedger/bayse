@@ -23,12 +23,21 @@
 - **CSS**
 	- compiled Myth CSS
 
-- **VENDOR**
+- **Vendor**
     - RequireJS
     - jQuery
     - add other vendor files here
 
-## Setup
+## Installation
+
+You can create a new Bayse project with VoloJS [http://volojs.org/](http://volojs.org/)
+
+```
+npm install -g volo
+volo create bayse-project lukehedger/bayse
+```
+
+## Getting started
 
 If you choose to use Gulp to compile the CoffeeScript and Myth files then run the following commands in the root of your project to get started:
 
