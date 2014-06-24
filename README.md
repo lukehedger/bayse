@@ -25,7 +25,7 @@
 
 - **VENDOR**
     - RequireJS
-    - jquery
+    - jQuery
     - add other vendor files here
 
 ## Setup
