@@ -1,11 +1,19 @@
 {
 	"name": "bayse",
 	"version": "0.0.1",
-	"dependencies": {
-    	"grunt-contrib-coffee": "~0.x.x",
-    	"grunt-contrib-clean": "~0.x.x",
-		"grunt-contrib-watch": "~0.x.x",
-		"grunt-myth": "~0.x.x",
-    	"grunt": "~0.4.x"
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/lukehedger/bayse"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"gulp": "~3.8.0",
+		"gulp-minify-css": "~0.3.0",
+		"gulp-coffee": "~1.4.1",
+		"gulp-myth": "~0.3.1",
+		"gulp-notify": "~1.2.1",
+		"tiny-lr": "0.0.5",
+		"gulp-livereload": "~1.2.0",
+		"gulp-util": "~2.2.14"
 	}
 }

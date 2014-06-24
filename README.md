@@ -2,50 +2,60 @@
 
 ## Stack
 
-- CoffeeScript - A language that compiles to JavaScript
-- Myth - A CSS preprocessor [http://www.myth.io/](http://www.myth.io/)
-- Requirejs - A JavaScript file and module loader
-- Gruntjs - A JavaScript task runner
+- **CoffeeScript** - language that compiles to JavaScript [http://coffeescript.org/](http://coffeescript.org/)
+- **Myth** - CSS preprocessor [http://www.myth.io/](http://www.myth.io/)
+<!-- - **RactiveJS** - template-driven UI library [http://www.ractivejs.org/](http://www.ractivejs.org/) -->
+- **RequireJS** - JavaScript file and module loader [http://requirejs.org/](http://requirejs.org/)
+- **GulpJS** - JavaScript task runner [http://gulpjs.com/](http://gulpjs.com/)
 
 ## Structure
 
-* CSS
-	- responsive grid and base styles
-	- Myth is optional: write CSS in myth.css then run `$ myth css/myth.css css/main.css -w` to compile and watch
+- **CoffeScript**
+    - source CoffeeScript: edit `.coffee` files in `coffee/` and run `gulp watch` to compile and watch
 
-* JS
-	- compiled Coffee
-	- lib
-		- require
-		- jquery
-		- hammer
-		- add other vendor files here
+- **JS**
+    - compiled CoffeeScript
 
-* CoffeScript
-	- source Coffee - compile with: `$ coffee -o js/ -cwm coffee/`
+- **Myth**
+    - source CSS: edit `.css` files in `myth/` and run `gulp watch` to compile and watch
+    - includes responsive grid and other helpers in `myth/lib/`
+
+- **CSS**
+	- compiled Myth CSS
+
+- **VENDOR**
+    - RequireJS
+    - jquery
+    - add other vendor files here
 
 ## Setup
 
-If you choose to use grunt to compile the CoffeeScript and Myth files then run the following commands to get started:
+If you choose to use Gulp to compile the CoffeeScript and Myth files then run the following commands in the root of your project to get started:
 
-### Install Grunt
+### Install Gulp
 
-```
-sudo npm install -g grunt-cli
-```
+`npm install -g gulp`
 
-### Install Grunt Dependencies
+### Install Gulp Dependencies
 
-```
-sudo npm install --save-dev
-```
+`npm install --save-dev`
 
 ### Compile and watch
 
-```
-grunt
-```
+`gulp watch`
+
+### ...or just compile once
+
+`gulp`
 
 ### Stop watching
 
-To stop the watch task running ctrl + z.
+`ctrl + c`
+
+## TODO
+
+- [ ] Yeoman generator
+- [ ] Ractive templating
+- [ ] editorconfig file
+- [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
+- [ ] moutjs ([here](http://moutjs.com/) - use with browserify)

@@ -1,5 +1,0 @@
-- gulp tasks from gh-page
-- browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
-- handlebars (with gulp compile/browserify transform?)
-- moutjs ([here](http://moutjs.com/) - can it be used with browserify?)
-- simplfy responsive images solution http://mobile.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/

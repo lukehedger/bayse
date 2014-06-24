@@ -15,7 +15,3 @@ node_modules/
 # Map files #
 ######################
 js/*.map
-
-# Myth CSS #
-######################
-# myth.css
