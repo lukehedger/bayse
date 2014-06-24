@@ -4,7 +4,7 @@
 
 - **CoffeeScript** - language that compiles to JavaScript [http://coffeescript.org/](http://coffeescript.org/)
 - **Myth** - CSS preprocessor [http://www.myth.io/](http://www.myth.io/)
-<!-- - **RactiveJS** - template-driven UI library [http://www.ractivejs.org/](http://www.ractivejs.org/) -->
+- **RactiveJS** - template-driven UI library [http://www.ractivejs.org/](http://www.ractivejs.org/)
 - **RequireJS** - JavaScript file and module loader [http://requirejs.org/](http://requirejs.org/)
 - **GulpJS** - JavaScript task runner [http://gulpjs.com/](http://gulpjs.com/)
 
