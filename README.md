@@ -90,7 +90,7 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 ## TODO
 
 - [x] Yeoman generator
-- [x] Slush generator
+- [ ] Slush generator
 - [ ] Ractive templating
 - [ ] editorconfig file
 - [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
