@@ -30,11 +30,37 @@
 
 ## Installation
 
+### Volo
+
 You can create a new Bayse project with VoloJS [http://volojs.org/](http://volojs.org/)
 
 ```
 npm install -g volo
 volo create bayse-project lukehedger/bayse
+```
+
+### Slush - *coming soon*
+
+For a custom Bayse, use the Slush generator [http://slushjs.github.io/](http://slushjs.github.io/)
+
+```
+npm install -g slush
+npm install -g slush-bayse
+mkdir bayse-project
+cd bayse-project
+slush bayse
+```
+
+### Yeoman
+
+There's also a Yeoman generator [http://yeoman.io/](http://yeoman.io/)
+
+```
+npm install -g yo
+npm install -g generator-bayse
+mkdir bayse-project
+cd bayse-project
+yo bayse
 ```
 
 ## Getting started
@@ -63,7 +89,8 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 
 ## TODO
 
-- [ ] Yeoman generator
+- [x] Yeoman generator
+- [x] Slush generator
 - [ ] Ractive templating
 - [ ] editorconfig file
 - [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
