@@ -93,5 +93,6 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 - [ ] Slush generator
 - [ ] Ractive templating
 - [ ] editorconfig file
+- [ ] improve HTML boilerplate with [http://html5boilerplate.com/](http://html5boilerplate.com/)
 - [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
 - [ ] moutjs ([here](http://moutjs.com/) - use with browserify)
