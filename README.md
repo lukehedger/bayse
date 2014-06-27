@@ -1,4 +1,6 @@
-# Bayse - a project starter template
+# Bayse
+
+Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and RequireJS. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. Templating with Ractive is coming soon too.
 
 ## Stack
 
@@ -39,16 +41,15 @@ npm install -g volo
 volo create bayse-project lukehedger/bayse
 ```
 
-### Slush - *coming soon*
+### Slush
 
 For a custom Bayse, use the Slush generator [http://slushjs.github.io/](http://slushjs.github.io/)
 
 ```
 npm install -g slush
 npm install -g slush-bayse
-mkdir bayse-project
-cd bayse-project
-slush bayse
+mkdir bayse-project && cd $_
+slush bayse <app-name>
 ```
 
 ### Yeoman
@@ -58,8 +59,7 @@ There's also a Yeoman generator [http://yeoman.io/](http://yeoman.io/)
 ```
 npm install -g yo
 npm install -g generator-bayse
-mkdir bayse-project
-cd bayse-project
+mkdir bayse-project && cd $_
 yo bayse
 ```
 
@@ -90,7 +90,7 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 ## TODO
 
 - [x] Yeoman generator
-- [ ] Slush generator
+- [x] Slush generator
 - [ ] Ractive templating
 - [ ] editorconfig file
 - [ ] improve HTML boilerplate with [http://html5boilerplate.com/](http://html5boilerplate.com/)
