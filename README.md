@@ -98,7 +98,7 @@ When using Gulp, the `gulp watch` task will start a BrowserSync server at port 5
 - [x] Slush generator
 - [x] Gulp server w/BrowserSync
 - [x] editorconfig file
-- [ ] improve HTML boilerplate with [http://html5boilerplate.com/](http://html5boilerplate.com/)
+- [ ] improve HTML boilerplate with [this](http://html5boilerplate.com/) and [this](https://developers.google.com/web/starter-kit/)
 - [ ] Ractive templating
 - [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
 - [ ] moutjs ([here](http://moutjs.com/) - use with browserify)
