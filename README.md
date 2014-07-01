@@ -68,40 +68,22 @@ yo bayse
 
 If you choose to use Gulp to compile the CoffeeScript and Myth files then run the following commands in the root of your project to get started:
 
-### Install Gulp
-
-`npm install -g gulp`
-
-### Install Gulp Dependencies
-
-`npm install --save-dev`
-
-### Compile and watch
-
-`gulp watch`
-
-### ...or just compile once
-
-`gulp`
-
-### Stop watching
-
-`ctrl + c`
+- Install Gulp: `npm install -g gulp`
+- Install Gulp Dependencies: `npm install --save-dev`
+- Compile and watch: `gulp watch`
+- ...or just compile once: `gulp`
+- Stop watching: `ctrl + c`
 
 ## Server
 
 When using Gulp, the `gulp watch` task will start a BrowserSync server at port 5000 [http://localhost:5000](http://localhost:5000). You can configure BrowserSync options within `gulpfile.js`.
 
+## PageSpeed
+
+You can analyse your site with [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) by running `gulp analyse`.
+
 ## TODO
 
-- [x] Yeoman generator
-- [x] Slush generator
-- [x] Gulp server w/BrowserSync
-- [x] editorconfig file
-- [x] improve boilerplate with [this](http://html5boilerplate.com/) and [this](https://developers.google.com/web/starter-kit/)
-- [x] Gulp psi
-- [ ] Gulp imagemin
-- [ ] Ractive templating
-- [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
-- [ ] moutjs ([here](http://moutjs.com/) - use with browserify)
-- [ ] Build task
+- [ ] Ractive
+- [ ] Browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
+- [ ] Moutjs ([here](http://moutjs.com/) - use with browserify)
