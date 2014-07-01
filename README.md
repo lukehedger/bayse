@@ -1,6 +1,6 @@
 # Bayse
 
-Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and RequireJS. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. Templating with Ractive is coming soon too.
+Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and RequireJS. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. It also has a built-in, synchronised server with BrowserSync. Templating with Ractive is coming soon too.
 
 ## Stack
 
@@ -9,6 +9,7 @@ Bayse is a straight-forward, ever-evolving, hyphen-loving project starter templa
 - **RactiveJS** - template-driven UI library [http://www.ractivejs.org/](http://www.ractivejs.org/)
 - **RequireJS** - JavaScript file and module loader [http://requirejs.org/](http://requirejs.org/)
 - **GulpJS** - JavaScript task runner [http://gulpjs.com/](http://gulpjs.com/)
+- **BrowserSync** - Synchronised browser testing with built-in server [http://www.browsersync.io/](http://www.browsersync.io/)
 
 ## Structure
 
@@ -87,12 +88,18 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 
 `ctrl + c`
 
+## Server
+
+When using Gulp, the `gulp watch` task will start a BrowserSync server at port 5000 [http://localhost:5000](http://localhost:5000). You can configure BrowserSync options within `gulpfile.js`.
+
 ## TODO
 
 - [x] Yeoman generator
 - [x] Slush generator
-- [ ] Ractive templating
+- [x] Gulp server w/BrowserSync
 - [ ] editorconfig file
 - [ ] improve HTML boilerplate with [http://html5boilerplate.com/](http://html5boilerplate.com/)
+- [ ] Ractive templating
 - [ ] browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
 - [ ] moutjs ([here](http://moutjs.com/) - use with browserify)
+- [ ] Build task
