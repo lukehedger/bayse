@@ -2,6 +2,9 @@
    TYPOGRAPHY
    ========================================================================== */
 
+/* import Settings */
+@import "../lib/settings.css";
+
 html,body,button,input,select,textarea {
 	color:#444;
 }
@@ -12,7 +15,7 @@ body {
 }
 
 h1 {
-
+	color: var(--colour-coral);
 }
 
 h2 {

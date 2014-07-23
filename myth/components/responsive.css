@@ -1,0 +1,81 @@
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* Images */
+
+img {
+	max-width: 100%;
+}
+
+/* Video */
+
+video{
+	max-width: 100%;
+}
+
+/* This padding is used to supply the necessary height of the video container. Height is then set to 0.
+ * The video has an aspect ratio of 16:9 so the height is 56.25% of the width - 9 / 16 = 0.5625 x 100
+ * Position relative is specified so the contained element can then ignore this padding */
+.video-wrap {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	position:relative;
+}
+
+/* These styles allow the contained element - the embedded object - to fill the container div and ignore its padding */
+.video-wrap iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+.hidden {
+	display: none;
+}
+
+/* XLarge */
+@media only screen and (min-width: 1280px) {
+	.show-xlarge {
+		display: block;
+	}
+}
+
+/* Large */
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+	.show-large {
+		display: block;
+	}
+}
+
+/* Medium */
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+	.show-medium {
+		display: block;
+	}
+}
+
+/* Small */
+@media only screen and (max-width: 568px) {
+	.show-small {
+		display: block;
+	}
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx),
+only screen and (min-resolution: 192dpi) {
+
+	/* Add background-size: cover; to retina bckg img elements */
+	.retina{
+		/*background-image:url('../img/logo@2x.png');*/
+	}
+}

@@ -30,7 +30,9 @@ gulp.task('coffee', function () {
 // Myth
 gulp.task('myth', function () {
 	gulp.src(config.paths.myth)
-		.pipe(myth())
+		.pipe(myth({
+			source: './myth'
+		}))
 		.pipe(gulp.dest('css'))
 		.pipe(minifycss({
 			keepBreaks: true,
@@ -51,8 +53,8 @@ gulp.task('browser-sync', function() {
         	min: 5000,
         	max: 5000
         },
-        open: false, // disable automatic browser launch on server start
-        notify: false // disable browser notifications
+        open: true, // control automatic browser launch on server start
+        notify: false // control browser notifications
     });
 });
 
@@ -76,11 +78,10 @@ gulp.task('pagespeed.desktop', function (cb) {
 
 // bundled tasks
 gulp.task('default', function () {
-	gulp.start('coffee', 'myth');
+	gulp.start('coffee', 'myth', 'browser-sync', 'watch');
 });
 
 gulp.task('watch', function() {
-	gulp.start('browser-sync');
 	gulp.watch(config.paths.myth, ['myth']);
 	gulp.watch(config.paths.coffee, ['coffee']);
 });

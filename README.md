@@ -14,13 +14,13 @@ Bayse is a straight-forward, ever-evolving, hyphen-loving project starter templa
 ## Structure
 
 - **CoffeScript**
-    - source CoffeeScript: edit `.coffee` files in `coffee/` and run `gulp watch` to compile and watch
+    - source CoffeeScript: edit `.coffee` files in `coffee/` and run `gulp` to compile and watch
 
 - **JS**
     - compiled CoffeeScript
 
 - **Myth**
-    - source CSS: edit `.css` files in `myth/` and run `gulp watch` to compile and watch
+    - source CSS: edit `.css` files in `myth/` and run `gulp` to compile and watch
     - includes responsive grid and other helpers in `myth/lib/`
 
 - **CSS**
@@ -70,13 +70,12 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 
 - Install Gulp: `npm install -g gulp`
 - Install Gulp Dependencies: `npm install --save-dev`
-- Compile and watch: `gulp watch`
-- ...or just compile once: `gulp`
+- Run Gulp tasks: `gulp`
 - Stop watching: `ctrl + c`
 
 ## Server
 
-When using Gulp, the `gulp watch` task will start a BrowserSync server at port 5000 [http://localhost:5000](http://localhost:5000). You can configure BrowserSync options within `gulpfile.js`.
+When using Gulp, the `gulp` task will start a BrowserSync server at port 5000 [http://localhost:5000](http://localhost:5000). You can configure BrowserSync options within `gulpfile.js`.
 
 ## PageSpeed
 

@@ -1,5 +1,6 @@
 body,button,html,input,select,textarea{color:#444}
 body{font:400 1em/1.4 Helvetica,Arial,sans-serif;text-shadow:#fff 0 1px 0}
+h1{color:#FD615B}
 a{color:#F2385A;-webkit-transition:.2s;transition:.2s;text-decoration:none;text-shadow:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
 a:hover{color:#36B1BF}
 ::-moz-selection{background:#36B1BF;text-shadow:none}
