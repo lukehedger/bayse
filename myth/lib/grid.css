@@ -2,6 +2,14 @@
    GRID
    ========================================================================== */
 
+/* import Settings */
+@import "../lib/settings.css";
+
+/* component variables */
+:root {
+	--gutter: 15px;
+}
+
 .grid {
 	width: 80%;
 	margin: 0 auto;
@@ -23,12 +31,12 @@
 }
 
 .column {
-	padding: 5px;
+	padding: var(--gutter);
 	float: left;
 }
 /* with ie8 support */
 .column:last-of-type,.column.last {
-	padding-right: 5px;
+	padding-right: var(--gutter);
 	float: right;
 }
 /* float columns right - top columns will appear on the right handside on desktop but on top for mobile */
@@ -36,7 +44,7 @@
 	float: right;
 }
 .column.rtl:last-of-type,.column.rtl.last {
-	padding-left: 5px;
+	padding-left: var(--gutter);
 	float: left;
 }
 /* bottom-align column */
@@ -72,7 +80,7 @@
 	width: 66.666667%;
 }
 .seven {
-width: 58.333333%;
+	width: 58.333333%;
 }
 .six {
 	width: 50%;
@@ -95,9 +103,9 @@ width: 58.333333%;
 
 .inner {
 	padding: 5px;
-	background: #ccc;
 	text-align: center;
-	border-radius: 4px; 
+	border-radius: 4px;
+	border: 1px solid var(--aqua);
 }
 
 @media only screen and (max-width: 480px) {
