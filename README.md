@@ -83,6 +83,7 @@ You can analyse your site with [PageSpeed Insights](https://developers.google.co
 
 ## TODO
 
-- [ ] Ractive
+- [ ] Ractive templates
 - [ ] Browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
 - [ ] Moutjs ([here](http://moutjs.com/) - use with browserify)
+- [ ] Build task ([see this](http://johnotander.com/front-end-development/2014/08/08/build-tasks-with-gulpjs/))
