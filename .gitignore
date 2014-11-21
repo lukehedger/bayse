@@ -15,3 +15,7 @@ node_modules/
 # Map files #
 ######################
 js/maps/
+
+# Bundled JS #
+######################
+js/bundle.js

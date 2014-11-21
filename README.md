@@ -1,13 +1,13 @@
 # Bayse
 
-Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and RequireJS. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. It also has a built-in, synchronised server with BrowserSync. Templating with Ractive is coming soon too.
+Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and Browserify for JavaScript module loading. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. Oh, and Ractive for reactive DOM templating! It also has a built-in, synchronised server with BrowserSync.
 
 ## Stack
 
 - **CoffeeScript** - language that compiles to JavaScript [http://coffeescript.org/](http://coffeescript.org/)
 - **Myth** - CSS preprocessor [http://www.myth.io/](http://www.myth.io/)
 - **RactiveJS** - template-driven UI library [http://www.ractivejs.org/](http://www.ractivejs.org/)
-- **RequireJS** - JavaScript file and module loader [http://requirejs.org/](http://requirejs.org/)
+- **Browserify** - lets you `require('modules')` in the browser [http://browserify.org/](http://browserify.org/)
 - **GulpJS** - JavaScript task runner [http://gulpjs.com/](http://gulpjs.com/)
 - **BrowserSync** - Synchronised browser testing with built-in server [http://www.browsersync.io/](http://www.browsersync.io/)
 
@@ -26,10 +26,8 @@ Bayse is a straight-forward, ever-evolving, hyphen-loving project starter templa
 - **CSS**
 	- compiled Myth CSS
 
-- **Vendor**
-    - RequireJS
-    - jQuery
-    - add other vendor files here
+- **Template**
+    - Ractive HTML templates
 
 ## Installation
 
@@ -69,7 +67,7 @@ yo bayse
 If you choose to use Gulp to compile the CoffeeScript and Myth files then run the following commands in the root of your project to get started:
 
 - Install Gulp: `npm install -g gulp`
-- Install Gulp Dependencies: `npm install --save-dev`
+- Install dependencies: `npm install --save-dev`
 - Run Gulp tasks: `gulp`
 - Stop watching: `ctrl + c`
 
@@ -83,7 +81,7 @@ You can analyse your site with [PageSpeed Insights](https://developers.google.co
 
 ## TODO
 
-- [ ] Ractive templates
-- [ ] Browserify ([here](http://viget.com/extend/gulp-browserify-starter-faq) and [here](http://browserify.org/))
 - [ ] Moutjs ([here](http://moutjs.com/) - use with browserify)
+- [ ] Update generators with Browserify and Ractive
 - [ ] Build task ([see this](http://johnotander.com/front-end-development/2014/08/08/build-tasks-with-gulpjs/))
+- [ ] Stylus as alternative to Myth

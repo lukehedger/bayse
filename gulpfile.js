@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
+	browserify = require('browserify'),
+	source = require('vinyl-source-stream'),
 	sourcemaps = require('gulp-sourcemaps'),
-	coffee = require('gulp-coffee'),
 	myth = require('gulp-myth'),
 	minifycss = require('gulp-minify-css'),
 	gutil = require('gulp-util'),
@@ -10,25 +11,31 @@ var gulp = require('gulp'),
 // config
 var config = {
 	paths: {
-		coffee: 'coffee/**/*.coffee',
-		myth: 'myth/**/*.css'
+		coffee: './coffee/app.coffee',
+		js: './js',
+		myth: './myth/**/*.css',
+		template: './template/**/*.html'
 	},
 	site: 'https://github.com/lukehedger/bayse', // use public URL of your site
 	key: '' // use Google Developer API Key if you have one
 };
 
-// CoffeeScript
-gulp.task('coffee', function () {
-	gulp.src(config.paths.coffee)
-		.pipe(sourcemaps.init())
-		.pipe(coffee().on('error', gutil.log))
-		.pipe(sourcemaps.write('./maps'))
-		.pipe(gulp.dest('js'))
-		.pipe(browserSync.reload({stream:true, once: true}));
+// browserify
+gulp.task('browserify', function () {
+	browserify({
+		entries: [config.paths.coffee],
+		extensions: ['.coffee'],
+		debug: true
+	})
+	.bundle()
+	.on('error', gutil.log)
+	.pipe(source('bundle.js'))
+	.pipe(gulp.dest(config.paths.js))
+	.pipe(browserSync.reload({stream:true, once: true}))
 });
 
-// Myth
-gulp.task('myth', function () {
+// style
+gulp.task('style', function () {
 	gulp.src(config.paths.myth)
 		.pipe(myth({
 			source: './myth'
@@ -44,7 +51,7 @@ gulp.task('myth', function () {
 });
 
 // server
-gulp.task('browser-sync', function() {
+gulp.task('server', function() {
     browserSync.init(null, {
         server: {
             baseDir: "./"
@@ -78,12 +85,12 @@ gulp.task('pagespeed.desktop', function (cb) {
 
 // bundled tasks
 gulp.task('default', function () {
-	gulp.start('coffee', 'myth', 'browser-sync', 'watch');
+	gulp.start('browserify', 'style', 'server', 'watch');
 });
 
 gulp.task('watch', function() {
-	gulp.watch(config.paths.myth, ['myth']);
-	gulp.watch(config.paths.coffee, ['coffee']);
+	gulp.watch(config.paths.myth, ['style']);
+	gulp.watch([config.paths.coffee, config.paths.templates], ['browserify']);
 });
 
 gulp.task('analyse', ['pagespeed.desktop', 'pagespeed.mobile']);
