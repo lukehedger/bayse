@@ -90,7 +90,7 @@ gulp.task('default', function () {
 
 gulp.task('watch', function() {
 	gulp.watch(config.paths.myth, ['style']);
-	gulp.watch([config.paths.coffee, config.paths.templates], ['browserify']);
+	gulp.watch([config.paths.coffee, config.paths.template], ['browserify']);
 });
 
 gulp.task('analyse', ['pagespeed.desktop', 'pagespeed.mobile']);

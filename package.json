@@ -24,6 +24,7 @@
     "gulp-notify": "~1.2.1",
     "gulp-sourcemaps": "~0.4.1",
     "gulp-util": "~2.2.14",
+    "mout": "^0.11.0",
     "psi": "0.0.1",
     "ractivate": "^0.2.0",
     "ractive": "^0.6.1",

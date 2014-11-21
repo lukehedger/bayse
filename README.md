@@ -1,6 +1,6 @@
 # Bayse
 
-Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and Browserify for JavaScript module loading. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. Oh, and Ractive for reactive DOM templating! It also has a built-in, synchronised server with BrowserSync.
+Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and Browserify for JavaScript module loading. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. Oh, and Ractive for reactive DOM templating and [Mout](http://moutjs.com/docs/latest/) for modular JS utilities! It also has a built-in, synchronised server with BrowserSync.
 
 ## Stack
 
@@ -81,7 +81,6 @@ You can analyse your site with [PageSpeed Insights](https://developers.google.co
 
 ## TODO
 
-- [ ] Moutjs ([here](http://moutjs.com/) - use with browserify)
-- [ ] Update generators with Browserify and Ractive
+- [ ] Update generators with Browserify, Ractive and Mout
 - [ ] Build task ([see this](http://johnotander.com/front-end-development/2014/08/08/build-tasks-with-gulpjs/))
 - [ ] Stylus as alternative to Myth

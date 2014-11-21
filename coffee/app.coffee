@@ -1,3 +1,4 @@
+random = require('mout').random
 ractive = require 'ractive'
 
 class App
@@ -5,6 +6,7 @@ class App
 	constructor: ->
 
 		console.log 'Bayse up and running...'
+		console.log "Here's a random string: #{random.randString()} :)"
 
 		@_setupView()
 
