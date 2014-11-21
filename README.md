@@ -45,21 +45,9 @@ volo create bayse-project lukehedger/bayse
 For a custom Bayse, use the Slush generator [http://slushjs.github.io/](http://slushjs.github.io/)
 
 ```
-npm install -g slush
-npm install -g slush-bayse
+npm install -g slush slush-bayse
 mkdir bayse-project && cd $_
 slush bayse <app-name>
-```
-
-### Yeoman
-
-There's also a Yeoman generator [http://yeoman.io/](http://yeoman.io/)
-
-```
-npm install -g yo
-npm install -g generator-bayse
-mkdir bayse-project && cd $_
-yo bayse
 ```
 
 ## Getting started
@@ -81,6 +69,4 @@ You can analyse your site with [PageSpeed Insights](https://developers.google.co
 
 ## TODO
 
-- [ ] Update generators with Browserify, Ractive and Mout
 - [ ] Build task ([see this](http://johnotander.com/front-end-development/2014/08/08/build-tasks-with-gulpjs/))
-- [ ] Stylus as alternative to Myth
