@@ -59,14 +59,18 @@ If you choose to use Gulp to compile the CoffeeScript and Myth files then run th
 - Run Gulp tasks: `gulp`
 - Stop watching: `ctrl + c`
 
-## Server
+### Server
 
 When using Gulp, the `gulp` task will start a BrowserSync server at port 5000 [http://localhost:5000](http://localhost:5000). You can configure BrowserSync options within `gulpfile.js`.
 
-## PageSpeed
+### PageSpeed
 
 You can analyse your site with [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) by running `gulp analyse`.
 
+### Release
+
+Build release files by running `gulp release`
+
 ## TODO
 
-- [ ] Build task ([see this](http://johnotander.com/front-end-development/2014/08/08/build-tasks-with-gulpjs/))
+- [ ] Could add Travis CI and Divshot hosting/deployment to stack

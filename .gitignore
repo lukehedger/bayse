@@ -19,3 +19,7 @@ js/maps/
 # Bundled JS #
 ######################
 js/bundle.js
+
+# Release files #
+######################
+public/

@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 	browserify = require('browserify'),
 	source = require('vinyl-source-stream'),
 	sourcemaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify'),
 	myth = require('gulp-myth'),
 	minifycss = require('gulp-minify-css'),
 	gutil = require('gulp-util'),
@@ -14,7 +15,14 @@ var config = {
 		coffee: './coffee/app.coffee',
 		js: './js',
 		myth: './myth/**/*.css',
-		template: './template/**/*.html'
+		template: './template/**/*.html',
+		release: './public',
+		releaseCopy: [
+			'404.html',
+			'index.html',
+			'humans.txt',
+			'robots.txt'
+		]
 	},
 	site: 'https://github.com/lukehedger/bayse', // use public URL of your site
 	key: '' // use Google Developer API Key if you have one
@@ -31,7 +39,14 @@ gulp.task('browserify', function () {
 	.on('error', gutil.log)
 	.pipe(source('bundle.js'))
 	.pipe(gulp.dest(config.paths.js))
-	.pipe(browserSync.reload({stream:true, once: true}))
+	.pipe(browserSync.reload({stream:true, once: true}));
+});
+
+// script release
+gulp.task('script-release', function () {
+	gulp.src('./js/bundle.js')
+		.pipe(uglify())
+		.pipe(gulp.dest('./public/js'));
 });
 
 // style
@@ -48,6 +63,15 @@ gulp.task('style', function () {
 		}))
 		.pipe(gulp.dest('css'))
 		.pipe(browserSync.reload({stream:true}));
+});
+
+// style release
+gulp.task('style-release', function () {
+	gulp.src('./css/main.css')
+		.pipe(minifycss({
+			keepBreaks: false
+		}))
+		.pipe(gulp.dest('./public/css'));
 });
 
 // server
@@ -83,6 +107,12 @@ gulp.task('pagespeed.desktop', function (cb) {
 	}, cb);
 });
 
+// copy release
+gulp.task('copy-release', function () {
+	gulp.src(config.paths.releaseCopy)
+		.pipe(gulp.dest(config.paths.release));
+});
+
 // bundled tasks
 gulp.task('default', function () {
 	gulp.start('browserify', 'style', 'server', 'watch');
@@ -94,3 +124,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('analyse', ['pagespeed.desktop', 'pagespeed.mobile']);
+
+gulp.task('release', function () {
+	gulp.start('script-release', 'style-release', 'copy-release');
+});
