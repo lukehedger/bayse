@@ -1,34 +1,12 @@
 {
   "name": "bayse",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "http://github.com/lukehedger/bayse"
   },
   "author": "lukehedger",
-  "description": "a straight-forward, ever-evolving, hyphen-loving project starter template",
-  "browserify": {
-    "transform": [
-      "coffeeify",
-      "ractivate"
-    ]
-  },
+  "description": "a straight-forward, ever-evolving, hyphen-loving project starter kit",
   "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^1.1.2",
-    "browserify": "^6.3.2",
-    "coffeeify": "^1.0.0",
-    "gulp": "~3.8.0",
-    "gulp-minify-css": "~0.3.0",
-    "gulp-myth": "^0.3.1",
-    "gulp-notify": "~1.2.1",
-    "gulp-sourcemaps": "~0.4.1",
-    "gulp-uglify": "^1.0.1",
-    "gulp-util": "~2.2.14",
-    "mout": "^0.11.0",
-    "psi": "0.0.1",
-    "ractivate": "^0.2.0",
-    "ractive": "^0.6.1",
-    "vinyl-source-stream": "^1.0.0"
-  }
+  "devDependencies": {}
 }

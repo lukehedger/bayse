@@ -1,33 +1,14 @@
 # Bayse
 
-Bayse is a straight-forward, ever-evolving, hyphen-loving project starter template. In its most basic form it is an HTML boilerplate with a CSS grid system and Browserify for JavaScript module loading. You've then got the option to add CoffeeScript and/or Myth - with Gulp as the build system. Oh, and Ractive for reactive DOM templating and [Mout](http://moutjs.com/docs/latest/) for modular JS utilities! It also has a built-in, synchronised server with BrowserSync.
+Bayse is a straight-forward, ever-evolving, hyphen-loving project starter kit.
 
 ## Stack
 
-- **CoffeeScript** - language that compiles to JavaScript [http://coffeescript.org/](http://coffeescript.org/)
-- **Myth** - CSS preprocessor [http://www.myth.io/](http://www.myth.io/)
-- **RactiveJS** - template-driven UI library [http://www.ractivejs.org/](http://www.ractivejs.org/)
-- **Browserify** - lets you `require('modules')` in the browser [http://browserify.org/](http://browserify.org/)
-- **GulpJS** - JavaScript task runner [http://gulpjs.com/](http://gulpjs.com/)
-- **BrowserSync** - Synchronised browser testing with built-in server [http://www.browsersync.io/](http://www.browsersync.io/)
+TODO
 
 ## Structure
 
-- **CoffeScript**
-    - source CoffeeScript: edit `.coffee` files in `coffee/` and run `gulp` to compile and watch
-
-- **JS**
-    - compiled CoffeeScript
-
-- **Myth**
-    - source CSS: edit `.css` files in `myth/` and run `gulp` to compile and watch
-    - includes responsive grid and other helpers in `myth/lib/`
-
-- **CSS**
-	- compiled Myth CSS
-
-- **Template**
-    - Ractive HTML templates
+TODO
 
 ## Installation
 
@@ -37,7 +18,7 @@ You can create a new Bayse project with VoloJS [http://volojs.org/](http://voloj
 
 ```
 npm install -g volo
-volo create bayse-project lukehedger/bayse
+volo create <app-name> lukehedger/bayse
 ```
 
 ### Slush
@@ -52,25 +33,18 @@ slush bayse <app-name>
 
 ## Getting started
 
-If you choose to use Gulp to compile the CoffeeScript and Myth files then run the following commands in the root of your project to get started:
+TODO
 
-- Install Gulp: `npm install -g gulp`
-- Install dependencies: `npm install --save-dev`
-- Run Gulp tasks: `gulp`
-- Stop watching: `ctrl + c`
+- Install dependencies:
 
-### Server
+```
+npm install
+```
 
-When using Gulp, the `gulp` task will start a BrowserSync server at port 5000 [http://localhost:5000](http://localhost:5000). You can configure BrowserSync options within `gulpfile.js`.
+## Local server
 
-### PageSpeed
+TODO
 
-You can analyse your site with [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) by running `gulp analyse`.
+## Release
 
-### Release
-
-Build release files by running `gulp release`
-
-## TODO
-
-- [ ] Could add Travis CI and Divshot hosting/deployment to stack
+TODO

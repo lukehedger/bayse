@@ -12,14 +12,6 @@ Thumbs.db
 ######################
 node_modules/
 
-# Map files #
+# Tasks #
 ######################
-js/maps/
-
-# Bundled JS #
-######################
-js/bundle.js
-
-# Release files #
-######################
-public/
+*.todo
