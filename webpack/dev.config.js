@@ -9,7 +9,7 @@ module.exports = {
     './source/index'
   ],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, '../public'),
     filename: 'bundle.js'
   },
   plugins: [
@@ -20,7 +20,7 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/,
       loaders: ['react-hot', 'babel'],
-      include: path.join(__dirname, 'source')
+      include: path.join(__dirname, '../source')
     }]
   }
 };

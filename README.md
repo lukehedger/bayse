@@ -51,4 +51,8 @@ npm start
 
 ## Release
 
-TODO
+- Build release files
+
+```
+npm run build
+```
