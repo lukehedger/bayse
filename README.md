@@ -4,7 +4,9 @@ Bayse is a straight-forward, ever-evolving, hyphen-loving project starter kit.
 
 ## Stack
 
-TODO
+- **Webpack** - module bundler
+- **Babel** - JavaScript compiler
+- **React** - JavaScript library for building user interfaces
 
 ## Structure
 
@@ -33,9 +35,7 @@ slush bayse <app-name>
 
 ## Getting started
 
-TODO
-
-- Install dependencies:
+- Install local dependencies:
 
 ```
 npm install
@@ -43,7 +43,11 @@ npm install
 
 ## Local server
 
-TODO
+- Run app
+
+```
+npm start
+```
 
 ## Release
 
