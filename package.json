@@ -14,7 +14,11 @@
   "dependencies": {
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-router": "^1.0.0-beta3"
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.0-beta3",
+    "redux": "^3.0.4",
+    "redux-logger": "^2.0.4",
+    "redux-thunk": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.30",
@@ -22,6 +26,7 @@
     "babel-plugin-react-transform": "^1.1.1",
     "express": "^4.13.3",
     "react-transform-hmr": "^1.0.1",
+    "redux-devtools": "^2.1.5",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
