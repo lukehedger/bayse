@@ -4,13 +4,11 @@ Bayse is a straight-forward, ever-evolving, hyphen-loving project starter kit.
 
 ## Stack
 
-- **Webpack** - module bundler
-- **Babel** - JavaScript compiler
-- **React** - JavaScript library for building user interfaces
+To read more about the tech stack of this project take a look at [wiki/stack](wiki/stack.md).
 
-## Structure
+## Architecture
 
-TODO
+To read more about the architecture of this project take a look at [wiki/architecture](wiki/architecture.md).
 
 ## Installation
 
