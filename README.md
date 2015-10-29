@@ -35,6 +35,12 @@ slush bayse <app-name>
 
 ## Getting started
 
+- Install global dependencies:
+
+```
+npm install -g babel webpack
+```
+
 - Install local dependencies:
 
 ```
