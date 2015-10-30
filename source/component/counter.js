@@ -1,5 +1,17 @@
 import React, { Component, PropTypes } from 'react';
+import useSheet from 'react-jss';
+import classSet from 'classnames';
 
+const styles = {
+  above: {
+    'color': '#BADA55'
+  },
+  below: {
+    'color': '#C55'
+  }
+}
+
+@useSheet(styles)
 export default class Counter extends Component {
 
   constructor(props) {
@@ -17,10 +29,17 @@ export default class Counter extends Component {
   render() {
 
     const { counter } = this.props;
+    const { classes } = this.props.sheet;
 
     return (
       <div>
-        <h1>Counter - {counter}</h1>
+        <h1 className={classSet({
+          [classes.above]: counter >= 0,
+          [classes.below]: counter < 0
+        })}>
+          Counter - {counter}
+        </h1>
+
         <button onClick={e => this.onIncrement()}>+</button>
         <button onClick={e => this.onDecrement()}>-</button>
       </div>
