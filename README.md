@@ -53,6 +53,12 @@ npm install
 npm start
 ```
 
+- [Redux dev tools](https://github.com/gaearon/redux-devtools) can be toggled with
+
+```
+ctrl+h
+```
+
 ## Release
 
 - Build release files

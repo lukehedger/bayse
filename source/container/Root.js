@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
 import { Router, Route } from 'react-router';
 import configureStore from '../store/configureStore';
 
@@ -22,6 +23,13 @@ export default class Root extends Component {
             </Route>
           </Router>
         </Provider>
+
+        {/* dev tools */}
+        <DebugPanel top right bottom>
+          <DevTools store={store}
+                    monitor={LogMonitor}
+                    visibleOnLoad={false} />
+        </DebugPanel>
       </div>
     );
 
