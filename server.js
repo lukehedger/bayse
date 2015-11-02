@@ -31,8 +31,6 @@ server.get('*', function response(req, res) {
 
 });
 
-server.listen(3000);
-
 server.listen(port, 'localhost', function onStart(err) {
 
   if (err) {
